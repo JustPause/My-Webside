@@ -1,76 +1,24 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Vue Tutorial</title>
-        <style>
-            [v-cloak]{
-                display: none;
-            }
-            input {
-                margin: 10px;
-            }
+<html lang="en">
 
-            #Login{
-                text-align: center;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
 
-        </style>
-    </head>
-    <body>
-        <div id="app" v-cloak>
-            <login-form />
+<body>
 
-            <hr />
-            <button @click="toggleBox">Toggle Box</button>
-            <div v-if="isVisible" class="box"></div>
-        </div>
 
-        <script src="https://unpkg.com/vue@next"></script>
-        <script>
-            let app = Vue.createApp({
-                data: function(){
-                    return {
-                        greeting: 'Hello Vue 3!',
-                        
-                        isVisible: true
-                    }
-                }
-                
-            })
+    <h1>Hello world</h1>
+    <div id="app">
 
-            app.component('login-form',{
-                template: `
-                    <form @submit.prevent="hamdleSubmit" id="Login">
-                        <h1>{{title}}</h1>
-                        <custom-input type="email" v-model="email" />
-                        <custom-input type="password" v-model="password" />
-                        <button> Log in </button>
-                    </form>
-                `,
-                component: ['custom-input'],
-                data() {
-                    return {
-                        title:'Login Form',
-                        email: '',
-                        password: ''
-                    }
-                },
-                methods: {
-                    hamdleSubmit() {
-                        console.log(this.email, this.password)
-                    }
-                }
-            })
-            app.component('custom-input',{
-                template: `
-                    <lable>
-                        {{ label }}
-                        <input type="text">
-                    </label>
-                `
-            })
-            app.mount('#app')
-            
-        </script>
-    </body>
+    </div>
+
+    <script src="./script.js">
+
+    </script>
+</body>
+
 </html>
