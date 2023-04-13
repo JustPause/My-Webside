@@ -11,7 +11,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(img/pexels-pixabay-256453.jpg);
+    background-image: url(img/pexels-samuel-jean-butler-16223074.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -24,6 +24,9 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 10px;
+    background: #00000090;
+    border-radius: 10px;
 }
 
 .logo{
@@ -39,7 +42,7 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     position: relative;
 }
 
@@ -60,7 +63,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 30px;
 }
 .header-text h1{
@@ -69,4 +72,13 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     color: darkorange;
+}
+
+.header-text{
+    padding: 10px;
+    height: auto;
+    width: 392px;
+    position: fixed;
+    border-radius: 10px;
+    background: #00000090;
 }
