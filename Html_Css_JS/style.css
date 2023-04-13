@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
+    font-size: 25px;
 }
 body{
     background-color: #161616;
@@ -16,10 +17,6 @@ body{
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
-}
-
-#abaut{
-    margin-top: 15%;
 }
 
 .container{
@@ -48,7 +45,7 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
 }
 
@@ -80,8 +77,101 @@ nav ul li a:hover::after{
     background: #00000090;
 }
 .header-text h2{
-    font-size: 30;
+    font-size: 40px;
 }
 .header-text h2 span{
     color: darkorange;
+    font-size: 40px;
+}
+
+/* ------------Abaut------------ */
+
+#about{
+    margin-top: 15%;
+    padding: 80px 0;
+    color: #fff;
+    
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-2{
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    position: static;
+    border-radius: 25px;
+    background: #00000090;
+
+    flex-basis: 60%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 img {
+    border-radius: 25px;
+    width: 100%; 
+    height: auto;
+}
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about-col-2 p {
+    margin-top: 5%;
+    font-size: 20px;
+} 
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: darkorange;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transform: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: darkorange;
+    font-size: 20px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
 }

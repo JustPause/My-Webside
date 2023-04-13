@@ -31,20 +31,124 @@
             </div>
         </div>
 
-        <div id="abaut">
+        <div id="about">
             <div class="container">
                 <div class="row">
-                    <div class="abaut-col-1">
-                        <img src="img/user.png">
+                    <div class="about-col-1">
+                        <img src="img/pexels-sinitta-leunen-6652928.jpg">
                     </div>
-                    <div class="abaut-col-2">
-                        <h1>About Me</h1>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            I'm a self-titled coder and programmer. As a human being, I have never liked standing at one
+                            pace. All ways wanted to learn more abaut tehnology and how it empowers people to do more
+                            with their limited time. That could be one of the reasons I enjoy programming languages such
+                            as C or C++. One more skill that I have learned is 3D modeling. The main reason was that I
+                            wanted to make a game, and 3D games look wonderful. Some people like Pixle art. I like
+                            low-poly modes. In my free time, I love playing my electric guitar and bass. I used to be in
+                            a band, but we split up and stopped paying togeder.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">
+                                Skills
+                            </p>
+                            <p class="tab-links" onclick="opentab('experience')">
+                                Experience
+                            </p>
+                            <p class="tab-links" onclick="opentab('education')">
+                                Education
+                            </p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>
+                                    <span>
+                                        UI/UX
+                                    </span>
+                                    <br>
+                                    Designing Wep & App interfaces
+                                </li>
+                                <li>
+                                    <span>
+                                        Web Development
+                                    </span>
+                                    <br>
+                                    Websites Development
+                                </li>
+                                <li>
+                                    <span>
+                                        App Development
+                                    </span>
+                                    <br>
+                                    Building Android & iOS apps
+                                </li>
+                                <li>
+                                    <span>
+                                        Software Development
+                                    </span>
+                                    <br>
+                                    Windows Software & Linux Software
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>
+                                    <span>
+                                        "UAB Osmosas"
+                                    </span>
+                                    <br>
+                                    Designing Wep, WordPress & PrestaShop
+                                    2022 - now
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>
+                                        High school - Kauno Valdorfo mokykla
+                                    </span>
+                                    <br>
+                                    2010 - 2022
+                                </li>
+                                <li>
+                                    <span>
+                                        VilniusCoding.lt - Java for Android
+                                    </span>
+                                    <br>
+                                    2023 - now
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablink) {
+                tablink.classList.remove("active-link")
+            }
+        }
+
+        function opentab(tabname) {
+            for (tabcontent of tabcontent) {
+                tabcontent.classList.remove("active-tab")
+            }
+        }
+    </script>
+
 </body>
 
 </html>
