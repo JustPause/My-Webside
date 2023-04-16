@@ -1,17 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
     font-size: 25px;
 }
-body{
+
+body {
     background-color: #161616;
     color: #fff;
 }
 
-#background{
-    width: 100%; 
+#background {
+    width: 100%;
     height: 300vh;
     background-image: url(img/pexels-samuel-jean-butler-16223074.jpg);
     background-size: cover;
@@ -19,10 +20,11 @@ body{
     /* background-attachment: fixed; */
 }
 
-.container{
+.container {
     padding: 10px 10%;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,24 +34,24 @@ nav{
     border-radius: 25px;
 }
 
-.logo{
+.logo {
     width: 100px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 5px 10px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 25px;
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -61,43 +63,45 @@ nav ul li a::after{
     transition: 0.6s;
 }
 
-nav ul li a:hover::after{
+nav ul li a:hover::after {
     width: 100%;
 }
 
-.header-text{
+.header-text {
     margin-top: 15%;
     font-size: 30px;
 
     padding: 20px;
     height: auto;
     width: 460px;
-    position:static;
+    position: static;
     border-radius: 25px;
     background: #00000090;
 }
-.header-text h2{
+
+.header-text h2 {
     font-size: 40px;
 }
-.header-text h2 span{
+
+.header-text h2 span {
     color: darkorange;
     font-size: 40px;
 }
 
 /* ------------Abaut------------ */
 
-#about{
+#about {
     margin-top: 15%;
     padding: 80px 0;
     color: #fff;
-    
+
 }
 
-.about-col-1{
+.about-col-1 {
     flex-basis: 35%;
 }
 
-.about-col-2{
+.about-col-2 {
     padding: 20px;
     height: auto;
     width: 100%;
@@ -108,7 +112,7 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 
-.row{
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -116,10 +120,11 @@ nav ul li a:hover::after{
 
 .about-col-1 img {
     border-radius: 25px;
-    width: 100%; 
+    width: 100%;
     height: auto;
 }
-.sub-title{
+
+.sub-title {
     font-size: 50px;
     font-weight: 600;
     color: #fff;
@@ -128,14 +133,14 @@ nav ul li a:hover::after{
 .about-col-2 p {
     margin-top: 5%;
     font-size: 20px;
-} 
+}
 
-.tab-titles{
+.tab-titles {
     display: flex;
     margin: 20px 0 40px;
 }
 
-.tab-links{
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -143,7 +148,7 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-.tab-links::after{
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -151,27 +156,39 @@ nav ul li a:hover::after{
     position: absolute;
     left: 0;
     bottom: -8px;
-    transform: 0.6s;
+    transition: 0.6s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 70%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
 
-.tab-contents ul li span{
+.tab-contents ul li span {
     color: darkorange;
     font-size: 20px;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
+}
+
+---------------------services---------------------
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fix, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }
