@@ -1,5 +1,5 @@
 :root {
-    --speed: 0.5s;
+    --speed: 0.6s;
 }
 
 * {
@@ -63,7 +63,7 @@ nav ul li a::after {
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.6s;
+    transition: var(--speed);
 }
 
 nav ul li a:hover::after {
@@ -73,7 +73,6 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 15%;
     font-size: 2em;
-
     padding: 20px;
     height: auto;
     width: 460px;
@@ -169,7 +168,7 @@ nav ul li a:hover::after {
     position: absolute;
     left: 0;
     bottom: -8px;
-    transition: 0.6s;
+    transition: var(--speed);
 }
 
 .tab-links.active-link::after {
@@ -217,7 +216,7 @@ nav ul li a:hover::after {
     position: static;
     border-radius: 25px;
     background: #00000090;
-    transition: background 0.6s, transform 0.6s;
+    transition: background var(--speed), transform var(--speed);
 }
 
 .services-list div .fa-code{
@@ -287,7 +286,7 @@ nav ul li a:hover::after {
     width: 100%;
     display: block;
     border-radius: 25px;
-    transition: transform 0.6s;
+    transition: transform var(--speed);
 }
 .layer{
     width: 100%;
@@ -305,7 +304,7 @@ nav ul li a:hover::after {
     padding: 0 40px;
     text-align: center;
     font-size: 1em;
-    transition: height 0.6s;
+    transition: height var(--speed);
 }
 
 .layer h3{
@@ -332,6 +331,42 @@ nav ul li a:hover::after {
 
 .work:hover .layer{
     height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #fff;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background var(--speed);
+    font-size: 2em;
+}
+
+.btn:hover{
+    background: darkorange;
+}
+
+/* -------------Contacts------------ */
+
+.container .row .contact-left{
+    font-size: 1em;    
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    position: static;
+    border-radius: 25px;
+    background: #00000090; 
+}
+
+#EmailLink, #PhoneLink, #LinkedInLink, #GitHubLink {
+    font-size: 1.3em;
+    color: darkorange;
+    text-decoration: none;
+    padding-right: 2em;
 }
 
 /* -------------Some How------------ */
