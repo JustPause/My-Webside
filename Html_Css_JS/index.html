@@ -238,7 +238,7 @@
 								</a>
 							</div>
 						</div>
-					</div> 
+					</div>
 					<a href="#" class="btn"><p>See more</p></a>
 				</div>
 			</div>
@@ -252,29 +252,54 @@
 							<h2 class="sub-title">
 								Contact me
 							</h2>
-							<i class="fa-sharp fa-solid fa-phone"></i>
-							<a id="EmailLink" href="#">Email me</a>
-							
-							<i class="fa-sharp fa-solid fa-envelope"></i>
-							<a id="PhoneLink" href="#">Call me</a>
-							
-							<i class="fa-brands fa-linkedin"></i>
-							<a id="LinkedInLink" href="#">My LinkedIn</a>
-
-							<i class="fa-brands fa-github"></i>
-							<a id="GitHubLink" href="#">My GitHub</a>
 
 							<div class="social-icons">
-								<a href=""></a>
+								<a id="EmailLink" href="#">
+									<i
+										class="fa-Contact-me fa-sharp fa-solid fa-envelope"
+									></i>
+									<p>Email me</p>
+								</a>
 
+								<a id="PhoneLink" href="#">
+									<i
+										class="fa-Contact-me fa-sharp fa-solid fa-phone"
+									></i>
+									<p>Call me</p>
+								</a>
+
+								<a
+									id="LinkedInLink"
+									href="https://www.linkedin.com/in/justinas-stank%C5%ABnas-b4190a254/?original_referer="
+								>
+									<i
+										class="fa-Contact-me fa-brands fa-linkedin"
+									></i>
+									<p>My LinkedIn</p>
+								</a>
+
+								<a
+									id="GitHubLink"
+									href="https://github.com/JustPause"
+									><i
+										class="fa-Contact-me fa-brands fa-github"
+									></i>
+									<p>My GitHub</p>
+								</a>
 							</div>
-
+							<a href="img/Justinas_StankunasCV.pdf" class="btn btn-a">Download CV</a>
 						</div>
-						<div class="contact-right"></div>
+						<!-- <div class="contact-right">
+							<form>
+								<input type="text" name="Name" placeholder="Your Name" required>
+								<input type="email" name="email" placeholder="Tour Email" required>
+								<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+								<button type="sybmit">Submit</button>
+							</form>
+						</div> -->
 					</div>
-				</div> 
+				</div>
 			</div>
-
 		</div>
 
 		<script>
@@ -310,7 +335,6 @@
 			var Phone = document.getElementById("PhoneLink");
 
 			Phone.href = `tel:${ContryCode}${PartOne}${PartTwo}`;
-
 		</script>
 	</body>
 </html>
