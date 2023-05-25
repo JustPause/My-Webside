@@ -1,3 +1,7 @@
+:root {
+	--color: #FFC857;
+}
+
 * {
 	box-sizing: border-box;
 	transition: 0.35s ease;
@@ -136,7 +140,7 @@ h3 {
 	right: false;
 	bottom: 0;
 	width: 350px;
-	background-color: #F2DC30;
+	background-color: var(--color);
 	padding: 30px 30px 50px;
 }
 .mugshot {
