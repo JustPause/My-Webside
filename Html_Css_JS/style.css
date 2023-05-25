@@ -406,12 +406,19 @@ nav ul li a:hover::after {
 .social-icons a:hover p{
     color: #fff;
 }
+.contact-center{
+    display: flex;
+}
+.CV{
+    display: flex;  
+    position: relative;
+}
 
 /* -------------Some How------------ */
 
 .btn.btn-a{
+    margin: 10px;
     margin-top: 25px;
-    margin-bottom: 10px;
 }
 
 #services{
