@@ -1,7 +1,7 @@
 :root {
     --speed: 0.6s;
     --background: #00000090;
-    --color: darkorange;
+    --color: rgb(111, 0, 255);
 }
 
 * {
