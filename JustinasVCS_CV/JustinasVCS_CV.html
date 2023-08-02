@@ -177,14 +177,16 @@
       </div>
     </div>
   </div>
-  </div>
 
-  <script>
-    html2canvas(document.querySelector("#capture")).then(canvas => {
-      document.body.appendChild(canvas)
-    });
-  </script>
+    <script>
+      html2canvas(document.querySelector("#capture")).then
+      (canvas => {
+        document.getElementById("The-img").appendChild(canvas)
+      });
+      // document.getElementById("capture").style.display ="none";
+    </script>
 
+    <div id="The-img" style="text-align: center;" ></div>
 </body>
 
 </html>

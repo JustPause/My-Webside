@@ -154,7 +154,11 @@
         background: #79A9CE;
       }
     }
+    canvas{
+      text-align: center;
+    }
   }
+
   
   
   
