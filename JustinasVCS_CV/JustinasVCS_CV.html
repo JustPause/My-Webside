@@ -5,20 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <script src="./html2canvas.min.js"></script>
+  <script src="./html2canvas.js"></script>
 
-<link rel="stylesheet" href="JustinasVCS_CV.css">
+  <link rel="stylesheet" href="JustinasVCS_CV.css">
 
 </head>
 
 
 
 <body>
-  <div id="capture">
-    <div class="full" >
-
-      <p>Sviesa</p>
-
+  <div class="wrapper" id="capture">
+    <div class="main">
+      This is your div with the specified aspect ratio.
     </div>
   </div>
 
@@ -30,8 +28,10 @@
     html2canvas(document.querySelector("#capture")).then
       (canvas => {
         document.getElementById("The-img").appendChild(canvas)
-      });
-       document.getElementById("capture").style.display ="none";
+      }
+    );
+
+    document.getElementById("capture").style.display = "none";
 
   </script>
 
