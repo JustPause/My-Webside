@@ -1,41 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <script src="./html2canvas.js"></script>
+  <meta charset="utf-8" />
 
   <link rel="stylesheet" href="JustinasVCS_CV.css">
+  <link rel="stylesheet" href="Head.css">
+  <link rel="stylesheet" href="SmallPart.css">
+  <link rel="stylesheet" href="BigPart.css">
 
+  <script src="JustinasVCS_CV.js"></script>
 </head>
 
-
-
 <body>
-  <div class="wrapper" id="capture">
-    <div class="main">
-      This is your div with the specified aspect ratio.
+  <div class="full">
+    <div id="heder">
+      <h1 id="name">Justinas Stnakunas</h1>
+      <h2 id="job-position">Back-end programuotojas</h2>
     </div>
-  </div>
+    <div id="body">
+      <div id="smallPart">
+        <p id="number">+370 615 44445</p>
+        <p id="email">IamJustStan@hotmail.com</p>
+        <p id="city">Kaunas</p>
+        <p id="linkin">https://lt.linkedin.com/in/justinas-stank%C5%ABnas-b4190a254</p>
+        <p id="webside">iamjuststan.eu</p>
+        <p id="github">https://github.com/JustPause</p>
+      </div>
+      <div id="bigPart">
+        <p id="aboutMe">Esu jaunuolis kuris yra motivuotas susieti savajį gyvenima su informacinemis tehnologijomis,
+          taip pat mėgstu domėtis senosiomnis analoginėmis tehnologijomis. Ieškodamas kialio iki IT pozicijos įgavau
+          <b>"Vilnius Coding School" Java & Android sertifikata, Harvard CS50 sertifikata </b>, ir pradedu studijuoti
+          <b>"Programų sistemos" programa Kauno kolegijoje</b>. Turiu nedialia patirti kurdamas internetinias svetaines,
+          3D reklamas bei animacijas, bei kompiuterinius žaidimus. Taip pogi esu išsikėklias užduoti užpildyti savajį
+          github žaiai
+        </p>
 
-  <div id="The-img" style="text-align: center">
-  </div>
+        <div id="academicKnowledge">
+          <ul>
+            <li>"Kauno kolegijoje" - Programų sistemos</li>
+            <p>2023-09, vis dar einu </p>
+            <p>Kadangi tik šeis metais pradėsiu taigi dar nežinauk ką suzinosiu</p>
 
-  <script>
+            <li>"Harvard CS50"</li>
+            <p>2023-01, vis dar einu </p>
+            <p>
+              Šie mokymai yra vis dar bandomi užbaikti, bet jau iš jų naudos gavau. Tikslaiu jie man davė gerus C kalbos
+              pradmenis, SQL veikimo principus, Puslapių kurimo pradmenis ir padėjo surasti būda kaip bandyti išpresti
+              programavimo problemas, išmastyti kialiai kaip prieiti prie sprendimo.
+            </p>
+            <li>"Vilnius Coding School" - Java & Android sertifikata</li>
+            <p>2023-04, 2023-07 </p>
+            <p>
+              Šio kurso metu įgavau puiku suvokima java programavimo klabos pradmenų, ir android veikimo principų. Su
+              tomis žiniomis aš sukuriau programa andiodui, ja visdar tobuliniu, kad kažkada galėčiau išleisti kaip
+              pabaika projekta
+            </p>
+            <li>Kauno valdorfo mokykla - Viduininis išsilavinimas</li>
+            <p>2010-06, 2022-07 </p>
+            <p>
+              Šio kurso metu įgavau puiku suvokima java programavimo klabos pradmenų, ir android veikimo principų. Su
+              tomis žiniomis aš sukuriau programa andiodui, ja visdar tobuliniu, kad kažkada galėčiau išleisti kaip
+              pabaika projekta
+            </p>
+          </ul>
+        </div>
 
-    html2canvas(document.querySelector("#capture")).then
-      (canvas => {
-        document.getElementById("The-img").appendChild(canvas)
-      }
-    );
-
-    document.getElementById("capture").style.display = "none";
-
-  </script>
-
-
+        <div id="workExperience">
+          <ul>
+            <li>Fornt-end programeris - U.A.B. H2Oras</li>
+            <p>2023-02, dabar</p>
+            <p>Mano darbas susijau iš wordpress, prestashop puslapiu visuoliu problemu tvarkymo, perkiu sukialimo, perkelimo į kitus serverius svetainiu. Taip pat administravimo kių darbuotojų iš freelancinimo agenturiu, darbu paskirimo, tikrinimo. Taip pat is svetainės srveriu administravimo</p>
+            <li>Free lancinimas - 3D projektu animatorius</li>
+            <p>2020-10, 2020-10</p>
+<p>Trumpalaikis darbas prie projekto. Jo metu suptratau kaip svarbu palaikyti pusiausvira tart kokybės ir greicio</p>
+          </ul> 
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>

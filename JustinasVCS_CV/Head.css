@@ -1,0 +1,14 @@
+#heder {
+    background-color: chocolate;
+    height: 20%;
+}
+
+#name {
+    line-height: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 14px;
+    /* Vardas ir Pavardė - 14-20 dydis.
+    Antraštės (pozicija, skyrelių pavadinimai) - 12-14 dydis. 
+    Likusio turinio - 10-12 dydis. */
+}
