@@ -1,12 +1,38 @@
 #heder {
-    background-color: chocolate;
-    height: 20%;
+    height: 30%;
+    position: relative;
+}
+
+#spaser {
+    background-color: gainsboro;
+    height: 60%;
+    position: absolute;
+    width: 100%;
+    bottom: 25%;
 }
 
 #name {
-    text-align: center;
-    font-size: 14px;
+    font-size: 20pt;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    right: 10px;
     /* Vardas ir Pavardė - 14-20 dydis.
     Antraštės (pozicija, skyrelių pavadinimai) - 12-14 dydis. 
     Likusio turinio - 10-12 dydis. */
+}
+
+#job-position {
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 4pt;
+}
+
+.margin {
+    margin-left: 12pt;
+}
+
+#heightCenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-75%);
 }
