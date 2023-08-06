@@ -1,10 +1,10 @@
 #heder {
-    height: 30%;
+    height: 25%;
     position: relative;
 }
 
 #spaser {
-    background-color: gainsboro;
+    background-color: var(--primary);
     height: 60%;
     position: absolute;
     width: 100%;

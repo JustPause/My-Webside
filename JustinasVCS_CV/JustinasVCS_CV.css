@@ -1,15 +1,25 @@
+:root {
+    --background: #ffffff;
+    --primary: #f6e960;
+    --primary-text: #484848;
+    --secondary: #b2b8fb;
+    --secondary-text: #000000;
+
+}
+
 body {
-    background-color: rgb(32, 32, 32);
+    background-color: #323232;
     font-family:
         "Helvetica",
         "Arial",
         "Georgia",
         "Tahoma",
         "Times New Roman";
+    color: var(--primary-text);
 }
 
 .full {
-    background-color: white;
+    background-color: var(--background);
     width: 210mm;
     height: 297mm;
 }
@@ -23,6 +33,6 @@ h2 {
     margin-top: 0em;
 }
 
-.padding{
+.padding {
     padding: 1em;
 }
