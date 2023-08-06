@@ -17,5 +17,12 @@ body {
 #body {
     display: flex;
     height: 100%;
-    
+}
+
+h2 {
+    margin-top: 0em;
+}
+
+.padding{
+    padding: 1em;
 }

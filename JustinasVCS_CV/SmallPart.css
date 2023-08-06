@@ -1,5 +1,5 @@
 #smallPart {
-    background-color: cornflowerblue;
+    
     width: 30%;
     height: 70%;
     
@@ -15,11 +15,9 @@
     width: 1em;
 }
 
-#contact{
-    
-    padding-left: 1em;
+.padding-right{
     border-right-style: solid;
+}
+.padding-bottum{
     border-bottom-style: solid;
-    border-width: 10px;
-    
 }
