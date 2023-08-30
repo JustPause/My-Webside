@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Justinas Stankunas CV</title>
-		<link rel="stylesheet" href="./style.css" />
-	</head>
 
-	<body>
-		<!-- partial:index.partial.html -->
-		<!-- FONTS -->
-		<link
-			href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Raleway:100"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Montserrat"
-			rel="stylesheet"
-			type="text/css"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<title>Justinas Stankunas CV</title>
+	<link rel="stylesheet" href="./style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css" />
 
-		<!-- PAGE STUFF -->
-		<div class="rela-block page">
+</head>
+
+<body>
+
+	<!-- partial:index.partial.html -->
+	<!-- FONTS -->
+
+	<!-- PAGE STUFF -->
+	<div id="body">
+		<div class="rela-block page" id="download">
+
 			<div class="rela-block top-bar">
 				<div class="caps name">
-					<div class="abs-center">Justinas Stankūnas</div>
+					<h1 class="abs-center">Justinas Stankūnas</h1>
 				</div>
 			</div>
 
@@ -38,8 +29,10 @@
 				<p class="my-data">+370 615 44445</p>
 				<p class="my-data">IamJustStan@hotmail.com</p>
 				<br />
-				<p class="rela-block social github">Mano Github</p>
-				<p class="rela-block social linked-in">Mano LinkedIn</p>
+				<a class="rela-block social github" href="https://github.com/JustPause">github.com/JustPause</a>
+				<a class="rela-block social linked-in" href="
+				https://www.linkedin.com/in/justinas-stank%C5%ABnas-b4190a254
+				">Mano LinkedIn</a>
 
 				<p class="rela-block caps side-header">Įgudžiai</p>
 
@@ -116,9 +109,16 @@
 					darbo vietas
 				</p>
 			</div>
+
 		</div>
-		<!-- partial -->
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-		<script src="./script.js"></script>
-	</body>
+	</div>
+
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+	integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/pdfDownlod.js"></script>
+
 </html>

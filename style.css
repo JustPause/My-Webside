@@ -314,8 +314,10 @@ nav ul li a:hover::after {
     flex-direction: column;
     padding: 0 2vw;
     text-align: center;
-    font-size: 0.8vw;
     transition: height var(--speed);
+
+    color: #fff;
+    font-size: 1vw;
 }
 
 .layer h3{
@@ -327,7 +329,6 @@ nav ul li a:hover::after {
     margin-top: 1vw;
     color: var(--color);
     text-decoration: none;
-    font-size: 1.4vw;
     line-height: 2vw;
     background: var(--background);
     width: 4vw;
@@ -362,6 +363,9 @@ nav ul li a:hover::after {
     color: #000;
 }
 
+.layer{
+
+}
 /* -------------Contacts------------ */
 
 .container .row{
