@@ -199,12 +199,16 @@ h3 {
 	background-size: cover !important;
 }
 .social.github:before {
-	background: url("https://cdn4.iconfinder.com/data/icons/social-media-2552/64/social_media_github-19-128.png")
+	background: url("/img/social_media_github-19-128.webp")
 		center no-repeat;
 }
 .social.linked-in:before {
-	background: url("https://cdn4.iconfinder.com/data/icons/social-media-2552/64/social_media_linkedin-07-128.png")
+	background: url("/img/social_media_linkedin-07-128.webp")
 		center no-repeat;
+		margin: 0;
+		position: absolute;
+		top: 20%;
+
 }
 .side-header {
 	font-family: "Open Sans";
