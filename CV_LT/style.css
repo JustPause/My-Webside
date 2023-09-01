@@ -129,7 +129,7 @@ h3 {
 	bottom: 0;
 	width: 350px;
 	background-color: var(--color);
-	padding: 30px 30px 50px;
+	padding: 20px
 }
 .mugshot {
 	display: false;
@@ -198,25 +198,29 @@ h3 {
 	width: 35px;
 	background-size: cover !important;
 }
+
 .social.github:before {
 	background: url("/img/social_media_github-19-128.webp")
-		center no-repeat;
+		 no-repeat;
 }
+
 .social.linked-in:before {
 	background: url("/img/social_media_linkedin-07-128.webp")
-		center no-repeat;
-		margin: 0;
-		position: absolute;
-		top: 20%;
-
+		 no-repeat;
 }
+
+.social.webside:before {
+	background: url("/img/3317985.png")
+		 no-repeat;
+}
+
 .side-header {
 	font-family: "Open Sans";
 	font-size: 18px;
 	letter-spacing: 4px;
 	font-weight: 600;
 	line-height: 28px;
-	margin: 49.5px auto 10px;
+	margin: 50px auto 10px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #454955;
 }

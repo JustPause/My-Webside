@@ -2,8 +2,8 @@
     --speed: 0.6s;
     --background: #00000090;
     --color: #FFC857;
-    --border-radius: 1vw;
-    --padding: 1.2vw
+    --border-radius: 10px;
+    --padding: 1.2em
 }
 
 * {
@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-    padding: var(--padding) 15%;
+    padding: var(--padding) 10%;
 }
 
 nav {
@@ -219,7 +219,7 @@ nav ul li a:hover::after {
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 3em;
+    grid-gap: 1em;
     margin-top: 2em;
     font-size: 2em;
 }
@@ -227,7 +227,7 @@ nav ul li a:hover::after {
 .services-list div {
     padding: var(--padding);
     height: auto;
-    width: 100%;
+    /* width: 100%; */
     position: static;
     border-radius: var(--border-radius);
     background: var(--background);
@@ -265,7 +265,7 @@ nav ul li a:hover::after {
 #services .container .sub-title {
     padding: var(--padding);
     height: auto;
-    width: 100%;
+    /* width: 100%; */
     position: static;
     border-radius: var(--border-radius);
     background: var(--background);
@@ -274,7 +274,7 @@ nav ul li a:hover::after {
 #partfalio .container .sub-title {
     padding: var(--padding);
     height: auto;
-    width: 100%;
+    /* width: 100%; */
     position: static;
     border-radius: var(--border-radius);
     background: var(--background);
@@ -291,11 +291,11 @@ nav ul li a:hover::after {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+
     margin-top: 3em;
     font-size: 1em;
     padding-bottom: 1em;
-gap: 1em;
+gap: 2em;
 }
 
 .work {
@@ -332,13 +332,13 @@ gap: 1em;
 
 .layer h3 {
     padding: 0em 1em 0em 1em;
-    font-size: 2em;
-    margin-bottom: 2em;
+    font-size: 1.8em;
+    margin-bottom: 1em;
 }
 
 .layer p {
     padding: 0em 1em 0em 1em;
-    font-size: 1.8em;
+    font-size: 1.4em;
 }
 
 .work:hover img {
@@ -377,7 +377,7 @@ gap: 1em;
     font-size: 1em;
     padding: var(--padding);
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     border-radius: var(--border-radius);
     background: var(--background);
@@ -414,7 +414,7 @@ gap: 1em;
 }
 
 .social-icons a p {
-    font-size: 1.2vw;
+    font-size: 1.2em;
     color: #c0c0c0;
     margin-top: 0.2em;
 }
@@ -449,8 +449,8 @@ gap: 1em;
 /* -------------Some How------------ */
 
 .btn.btn-a {
-    margin: 1vw;
-    margin-top: 2vw;
+    margin: 1em;
+    margin-top: 2em;
 }
 
 #services {
@@ -458,20 +458,14 @@ gap: 1em;
 }
 
 .copyright {
-    margin-top: 1vw;
+    margin-top: 1em;
     width: 100%;
     text-align: center;
     padding: var(--padding) 0;
-    font-size: 1vw;
+    font-size: 1em;
     color: #fff;
 
     position: relative;
     border-radius: var(--border-radius);
     background: var(--background);
-}
-
-@media screen and (max-width: 600px) {
-    #background {
-        background-color: #000;
-    }
 }
