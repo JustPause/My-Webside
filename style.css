@@ -46,6 +46,16 @@ nav {
     width: 6em;
 }
 
+#colorChanger{
+    background-color: #c0c0c0;
+}
+
+#colorChanger:hover{
+
+    background-color: #FFC857;
+    transition: var(--speed);
+}
+
 nav ul li {
     display: inline-block;
     list-style: none;
