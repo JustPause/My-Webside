@@ -37,20 +37,24 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: var(--padding);
-    background: var(--background);
-    border-radius: var(--border-radius);
+
 }
 
 .logo {
     width: 6em;
 }
 
-#colorChanger{
-    background-color: #c0c0c0;
+.background-header {
+    padding: var(--padding);
+    background: var(--background);
+    border-radius: var(--border-radius);
 }
 
-#colorChanger:hover{
+#colorChanger {
+    background: var(--background);
+}
+
+#colorChanger:hover {
 
     background-color: #FFC857;
     transition: var(--speed);
@@ -305,7 +309,7 @@ nav ul li a:hover::after {
     margin-top: 3em;
     font-size: 1em;
     padding-bottom: 1em;
-gap: 2em;
+    gap: 2em;
 }
 
 .work {

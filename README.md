@@ -10,6 +10,9 @@ My home page, that should help find me in a crowd of people, more like that i ca
   - [ ] add iamteapot page
 - [ ] add pages for the hedder
   - [ ] add Dark Light mode
+    - [ ] change wallpapaer
+    - [ ] all the white border change to gray
+    - [ ] maybe chage text colot to gray
   - [ ] home
   - [ ] about
   - [ ] media - in burger meniu
