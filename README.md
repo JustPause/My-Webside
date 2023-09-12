@@ -8,6 +8,7 @@ My home page, that should help find me in a crowd of people, more like that i ca
   - [ ] add the header link web pages
   - [ ] add 404 page
   - [ ] add iamteapot page
+- [ ] increce the pdf qwealaty
 - [ ] add pages for the hedder
   - [ ] add Dark Light mode
     - [ ] change wallpapaer
