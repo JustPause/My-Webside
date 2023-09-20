@@ -388,7 +388,7 @@ nav ul li a:hover::after {
 
 
 .container .row {
-    font-size: 1em;
+    font-size: 1.8em;
     padding: var(--padding);
     height: 100%;
     /* width: 100%; */
@@ -399,7 +399,6 @@ nav ul li a:hover::after {
 
 .contact-center .sub-title {
     text-align: center;
-    padding-bottom: 0.5em;
 }
 
 .contact {
@@ -417,6 +416,7 @@ nav ul li a:hover::after {
     text-decoration: none;
     margin: 0 1.4em 0 1.4em;
     transition: transform var(--speed);
+    font-size: 2em;
 }
 
 .social-icons a i {
@@ -454,6 +454,10 @@ nav ul li a:hover::after {
 .CV {
     display: flex;
     justify-content: center;
+}
+
+.CV a{
+    font-size: 1.4em;
 }
 
 #container-scale-top {
