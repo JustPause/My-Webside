@@ -2,6 +2,7 @@
     --speed: 0.6s;
     --background: #00000090;
     --color: #FFC857;
+    --colorText: #202020; 
     --border-radius: 10px;
     --padding: 1.2em
 }
@@ -56,7 +57,8 @@ nav {
 
 #colorChanger:hover {
 
-    background-color: #FFC857;
+    background-color: var(--color);
+    color: var(--colorText);
     transition: var(--speed);
 }
 
@@ -273,6 +275,7 @@ nav ul li a:hover::after {
 
 .services-list a div:hover {
     background: var(--color);
+    color: var(--colorText);
     transform: translateY(-1em);
 }
 
@@ -381,7 +384,7 @@ nav ul li a:hover::after {
 
 .btn:hover {
     background: var(--color);
-    color: #000;
+    color: var(--colorText);
 }
 
 /* -------------Contacts------------ */
