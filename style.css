@@ -62,6 +62,8 @@ nav {
     transition: var(--speed);
 }
 
+.background-header{}
+
 nav ul li {
     display: inline-block;
     list-style: none;
