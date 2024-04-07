@@ -7,8 +7,8 @@
 	font-family: "Open Sans";
 	font-size: 18px;
 	letter-spacing: 0px;
-	font-weight: 400;
-	line-height: 28px;
+	font-weight: 400; 
+	line-height: 26px;
 	background-size: cover;
     margin: 0px;
 }
@@ -126,7 +126,7 @@ h3 {
 	top: 60px;
 	left: 5%;
 	right: false;
-	bottom: 0;
+	bottom: 3%;
 	width: 350px;
 	background-color: var(--color);
 	padding: 20px
@@ -210,7 +210,7 @@ h3 {
 }
 
 .social.webside:before {
-	background: url("/img/3317985.png")
+	background: url("/img/globe.png")
 		 no-repeat;
 }
 
