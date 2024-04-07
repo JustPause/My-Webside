@@ -2,6 +2,7 @@
     --speed: 0.6s;
     --background: #00000090;
     --color: #FFC857;
+    --colorText: #202020; 
     --border-radius: 10px;
     --padding: 1.2em
 }
@@ -56,9 +57,12 @@ nav {
 
 #colorChanger:hover {
 
-    background-color: #FFC857;
+    background-color: var(--color);
+    color: var(--colorText);
     transition: var(--speed);
 }
+
+.background-header{}
 
 nav ul li {
     display: inline-block;
@@ -273,6 +277,7 @@ nav ul li a:hover::after {
 
 .services-list a div:hover {
     background: var(--color);
+    color: var(--colorText);
     transform: translateY(-1em);
 }
 
@@ -381,14 +386,14 @@ nav ul li a:hover::after {
 
 .btn:hover {
     background: var(--color);
-    color: #000;
+    color: var(--colorText);
 }
 
 /* -------------Contacts------------ */
 
 
 .container .row {
-    font-size: 1em;
+    font-size: 1.8em;
     padding: var(--padding);
     height: 100%;
     /* width: 100%; */
@@ -399,7 +404,6 @@ nav ul li a:hover::after {
 
 .contact-center .sub-title {
     text-align: center;
-    padding-bottom: 0.5em;
 }
 
 .contact {
@@ -417,6 +421,7 @@ nav ul li a:hover::after {
     text-decoration: none;
     margin: 0 1.4em 0 1.4em;
     transition: transform var(--speed);
+    font-size: 2em;
 }
 
 .social-icons a i {
@@ -454,6 +459,10 @@ nav ul li a:hover::after {
 .CV {
     display: flex;
     justify-content: center;
+}
+
+.CV a{
+    font-size: 1.4em;
 }
 
 #container-scale-top {
