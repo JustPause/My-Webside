@@ -1,6 +1,9 @@
 <script setup>
 import TopBar from './components/TopBar.vue'
 import PartOne from './components/PartOne.vue'
+import PartTwo from './components/PartTwo.vue'
+import PartTree from './components/PartThree.vue'
+import PartFour from './components/PartFour.vue'
 </script>
 
 <template>
@@ -10,6 +13,9 @@ import PartOne from './components/PartOne.vue'
 
   <main>
     <PartOne />
+    <PartTwo />
+    <PartTree />
+    <PartFour />
   </main>
 </template>
 
@@ -18,4 +24,10 @@ import PartOne from './components/PartOne.vue'
   display: block;
   margin: 0 auto 2rem;
 }
+
+main {
+  background-color: var(--color-background-soft);
+}
+
+
 </style>

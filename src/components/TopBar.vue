@@ -1,11 +1,11 @@
 <script setup>
-import Menu from './TopBar/Menu.vue'
+import Menus from './TopBar/Menu.vue'
 import UserTheme from './TopBar/UserTheme.vue'
 </script>
 
 <template>
     <div class="menu-container">
-        <Menu />
+        <Menus />
 
         <UserTheme />
 
@@ -14,39 +14,38 @@ import UserTheme from './TopBar/UserTheme.vue'
 
 <style>
 .menu-container {
-    width: 100%;
-    max-width: 120rem;
+    width: var(--page-width);
     grid-column-gap: .5rem;
     grid-row-gap: .5rem;
     justify-content: flex-end;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 2rem;
-    padding-right: 2rem;
+    padding: 2rem;
     display: flex;
-    position: relative;
+    position: fixed;
+}
+
+.MenuClass {
+    background-color: var(--color-background);
+    border-radius: var(--border-radius);
+    padding: 0.5em 1em;
 }
 
 header {
     line-height: 1.5;
     display: inline;
+    display: flex;
 }
 
-@media (min-width: 1024px) {
-    header {
-        display: flex;
-        place-items: center;
-        padding-right: calc(var(--section-gap) / 2);
-    }
-
-    .logo {
-        margin: 0 2rem 0 0;
-    }
-
-    header .wrapper {
-        display: flex;
-        place-items: flex-start;
-        flex-wrap: wrap;
-    }
+.logo {
+    margin: 0 2rem 0 0;
 }
+
+header .wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {}
 </style>

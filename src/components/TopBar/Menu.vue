@@ -1,3 +1,3 @@
 <template>
-    <a href="#Menu">Menu</a>
+    <a href="#Menu" class="MenuClass">Menu</a>
 </template>
