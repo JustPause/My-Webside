@@ -1,15 +1,16 @@
 <template>
     <div class="text flex" style="padding-bottom: 1em;">
         <div id="Left">
-            <h2>As a programmer, I am dedicated to creating robust and maintainable products. In other words, I strive to produce works of art.</h2>
+            <h2>As a programmer, I am dedicated to creating robust and maintainable products. In other words, I strive
+                to produce works of art.</h2>
         </div>
         <div class="SplitH"></div>
         <div id="NotLeft">
             <a href="#CV">(About me)</a>
-            <div>
-                <a>Linkin</a>
-                <a>Github</a>
-                <a>Telegram</a>
+            <div id="z213a">
+                <a class="links">Linkin</a>
+                <a class="links">Github</a>
+                <a class="links">Telegram</a>
             </div>
         </div>
     </div>
@@ -18,18 +19,31 @@
 </template>
 
 <style>
-
 :root {
-    --size:0.2em;
+    --size: 0.2em;
 }
 
-#Left{
-    width: 60%;
+#Left {
+    width: 59.65%;
     float: left;
 }
 
-#NotLeft{
+#NotLeft {
     width: auto;
     float: right;
+}
+
+#z213a {
+    /* height: 78%; */
+
+    margin-top: 20%;
+
+}
+
+.links {
+    background-color: var(--color-background);
+    border-radius: var(--border-radius);
+    padding: 0.5em 1em;
+    margin-right: 5%;
 }
 </style>

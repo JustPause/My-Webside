@@ -4,6 +4,7 @@ import PartOne from './components/PartOne.vue'
 import PartTwo from './components/PartTwo.vue'
 import PartTree from './components/PartThree.vue'
 import PartFour from './components/PartFour.vue'
+import PartFive from './components/PartFive.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import PartFour from './components/PartFour.vue'
     <PartTwo />
     <PartTree />
     <PartFour />
+    <PartFive />
   </main>
 </template>
 
@@ -28,6 +30,4 @@ import PartFour from './components/PartFour.vue'
 main {
   background-color: var(--color-background-soft);
 }
-
-
 </style>
