@@ -1,25 +1,17 @@
 <template>
-      <div id="z213a">
-        <a class="links">Linkin</a>
-        <a class="links">Github</a>
-        <a class="links">Telegram</a>
-      </div>
+  <div class="flex" style="position: absolute">
+    <a class="links flex">Linkin</a>
+    <a class="links flex">Github</a>
+    <a class="links flex">Telegram</a>
+  </div>
 </template>
 
 <style>
-#z213a {
-  /* height: 78%; */
-
-  width: 100%;
-  margin-top: 20%;
-}
 
 .links {
-  display: flex
-  inline-flex;
-  text-align: left;
   background-color: var(--color-background);
   border-radius: var(--border-radius);
   padding: 0.5em;
+  margin: 0.2em;
 }
 </style>

@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import connectBar from "./connectBar.vue";
 </script>
 <template>
@@ -12,14 +12,9 @@ import connectBar from "./connectBar.vue";
     <div class="SplitH"></div>
     <div id="NotLeft">
       <a href="#CV">(About me)</a>
-
-      <div id="z213a">
-        <a class="links">Linkin</a>
-        <a class="links">Github</a>
-        <a class="links">Telegram</a>
-      </div>
-
-      <connectBar />
+      <!-- <div class="relative"> -->
+        <connectBar />
+      <!-- </div> -->
     </div>
   </div>
   <div class="SplitV"></div>
