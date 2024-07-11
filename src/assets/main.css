@@ -62,5 +62,7 @@ h4 {
   border-bottom: var(--size) solid var(--color-highlighters);
   border-radius: var(--border-radius);
   height: inherit;
+  
   margin: 0 1em;
+  width: 100%;
 }

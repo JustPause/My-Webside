@@ -14,7 +14,7 @@
           href="https://vuejs.org/"
           target="_blank"
           class="text-style-link inverse"
-          >Veu</a
+          >Vue</a
         >
       </div>
     </div>
