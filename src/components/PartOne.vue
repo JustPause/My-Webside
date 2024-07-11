@@ -1,5 +1,5 @@
 <template>
-    <div id="background" class="text">
+    <div id="background" class="text" style="padding-bottom: 3em">
         <h1>
             Justinas<br>Stankūnas
         </h1>

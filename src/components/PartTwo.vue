@@ -7,13 +7,11 @@
 </template>
 
 <style>
-.crop {
-    overflow: hidden;
-}
 
 .crop img {
-
-    margin: -400px 0 0 -200px;
-    max-width: 1600px;
+    object-fit: cover;
+    width: 100%;
+    height: 256px;
+    object-position: center calc(50% - 90px);
 }
 </style>

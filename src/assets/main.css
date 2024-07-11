@@ -34,6 +34,7 @@ h1 {
   padding-bottom: 0.4em;
   letter-spacing: -1px;
   line-height: 1;
+  color: var(--color-heading)
 }
 h2 {
   font-size: 2em;

@@ -30,8 +30,8 @@ npm run build
 
 ## To Do
 
-- [ ] text color, its to gray
-- [ ] needs to some how seperite the imige below more maybe increes the size of the padding
+- [x] text color, its to gray
+- [x] needs to some how seperite the imige below more maybe increes the size of the padding
 
  ```css
  .text {
