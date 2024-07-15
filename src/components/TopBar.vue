@@ -4,10 +4,12 @@ import UserTheme from "./TopBar/UserTheme.vue";
 </script>
 
 <template>
-  <div class="menu-container">
-    <Menus />
+  <div>
+    <div class="menu-container">
+      <Menus />
 
-    <UserTheme />
+      <UserTheme />
+    </div>
   </div>
 </template>
 
@@ -17,11 +19,9 @@ import UserTheme from "./TopBar/UserTheme.vue";
   grid-row-gap: 0.5rem;
   padding: 2rem;
   display: flex;
-  align-items: flex-start;
   position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  width: var(--page-width);
+  flex-direction: row-reverse;
 }
 
 .MenuClass {
