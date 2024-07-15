@@ -45,4 +45,14 @@ header .wrapper {
   place-items: flex-start;
   flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 1280px) {
+  body {
+    font-size: 20px;
+  }
+  .menu-container {
+    width: auto;
+    right: 0;
+  }
+}
 </style>

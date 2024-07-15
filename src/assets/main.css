@@ -59,32 +59,42 @@ h4 {
   height: inherit;
 
   margin: 0 1em;
-  width: 100%;
+  width: 97.5%;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 600px) {
   body {
-    font-size: 20px;
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  .inline-flex{
+    display: grid;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  body {
-    font-size: 22px;
-  }
-
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
   body {
     font-size: 24px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
   body {
-    font-size: 26px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  body {
+    font-size: 20px;
   }
 }
 
