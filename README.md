@@ -32,15 +32,7 @@ npm run build
 
 - [x] text color, its to gray
 - [x] needs to some how seperite the imige below more maybe increes the size of the padding
-
- ```css
- .text {
-  /* padding: 2em 2em; */
-  padding: 2em 2em 4em 2em;
- }
- ```
-
-- [ ] the imige subject has to be always in the center 
+- [x] the imige subject has to be always in the center 
 - [ ] Meniu iments work with the with of the page
 - [ ] Links about me shoode be more eye grabing and be locket to the bottom
 - [ ] The lines shode be line forming

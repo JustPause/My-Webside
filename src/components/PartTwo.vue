@@ -13,5 +13,6 @@
     width: 100%;
     height: 256px;
     object-position: center calc(50% - 90px);
+    
 }
 </style>
