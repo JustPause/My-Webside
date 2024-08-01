@@ -30,11 +30,22 @@ npm run build
 
 ## To Do
 
-- [x] text color, its to gray
-- [x] needs to some how seperite the imige below more maybe increes the size of the padding
-- [x] the imige subject has to be always in the center
-- [ ] The navigasion 2 bttons mut fit with the with of apllicasion and tht stil to the with for the widiaw
-- [ ] Meniu iments work with the with of the page
-- [ ] Links about me shoode be more eye grabing and be locket to the bottom
-- [ ] The lines shode be line forming
-- [ ] connect shode work
+### Header
+
+- Logo
+- Kategorijos
+  - Mano Darbai
+    - Github
+  - Pagrindinis
+- Kalba
+- Juodas modas/ Baltas Modas
+
+### Body
+
+- Mano nuotrauka su aprasimu, Mano ygudziasi ir kur galeciau dirbti
+- Mano Kontaktai
+- Mano Darbai
+
+### Footer
+
+### 404
