@@ -40,6 +40,8 @@ npm run build
 - Kalba
 - Juodas modas/ Baltas Modas
 
+truputi pavazevus zemyn headeris turetu tapti is fixed i sticky
+
 ### Body
 
 - Mano nuotrauka su aprasimu, Mano ygudziasi ir kur galeciau dirbti
