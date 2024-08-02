@@ -38,7 +38,7 @@ npm run build
     - Github
   - Pagrindinis
 - Kalba
-- Juodas modas/ Baltas Modas
+- Juodas modas / Baltas Modas
 
 truputi pavazevus zemyn headeris turetu tapti is fixed i sticky
 

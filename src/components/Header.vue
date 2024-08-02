@@ -1,20 +1,30 @@
 <template>
-    <nav class="flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-stripes-indigo rounded-lg pt-14">
-        <div class="w-96 h-20 flex-none rounded-lg flex items-center justify-center p-2 shadow-xl">
-            <div class="icon w-14 h-14 rounded-2xl"></div>
-            <p className="text-4xl text-center flex ml-5 logo-text">Justinas</p>
+    <nav class="flex fixed h-20 gap-16 text-white text-sm font-bold font-mono justify-center mt-12 px-64 w-1280">
+
+        <a href="#" class="flex-none rounded-xl flex items-center justify-center p-2 shadow-xl bg-black bg-opacity-20">
+            <div class="icon aspect-square h-14 rounded-xl ml-1"></div>
+            <p className="text-3xl text-center flex mx-4 logo-text">Justinas</p>
+        </a>
+
+        <div class=" rounded-xl flex items-center justify-center
+         category shadow-xl bg-part-transparent bg-black bg-opacity-20">
+            <button
+                className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Titulinis</button>
+            <button
+                className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Kodas</button>
+            <button
+                className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Kontaktai</button>
+            <button
+                className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">3D
+                darbai</button>
         </div>
-        <div class="p-4 h-20 grow rounded-lg flex items-center justify-around
-         category shadow-xl">
-            <button className="hover:outline outline-2 outline-color rounded-xl p-3 text-3xl ">Titulinis</button>
-            <button className="hover:outline outline-2 outline-color rounded-xl p-3 text-3xl ">Kodas</button>
-            <button className="hover:outline outline-2 outline-color rounded-xl p-3 text-3xl ">Kontaktai</button>
-            <button className="hover:outline outline-2 outline-color rounded-xl p-3 text-3xl ">3D darbai</button>
-        </div>
-        <div class="p-4 w-96 h-20 flex-none rounded-lg flex items-center justify-around shadow-xl">
-            <button className="hover:outline outline-2 outline-color rounded-xl p-2 text-3xl">
+
+        <div
+            class="flex-none rounded-xl flex items-center justify-around shadow-xl bg-black bg-opacity-20">
+            <button className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">
+
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-12">
+                    stroke="currentColor" class="size-9">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
                 </svg>
@@ -22,19 +32,20 @@
                     stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-                </svg> -->
+                </svg>  -->
 
             </button>
-            <button className="hover:outline outline-2 outline-color rounded-xl p-2 text-3xl">
-                <p className="text-4xl leading-11">LT</p>
+
+            <button className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">
+                <p className="text-3xl size-9">LT</p>
             </button>
         </div>
     </nav>
+
 </template>
 
 <style scoped>
 .icon {
-
     background-color: var(--white);
 }
 
@@ -43,10 +54,12 @@
     align-items: center;
 }
 
-.category {}
+.w-1280 {
+    width: 1280px;
+}
 
 .outline-color {
-    outline-color: var(--black-mute);
+    outline-color: rgba(255, 255, 255, 0.2);
 }
 
 .leading-11 {
