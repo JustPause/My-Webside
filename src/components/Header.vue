@@ -9,19 +9,19 @@
         <div class=" rounded-xl flex items-center justify-center
          category shadow-xl bg-part-transparent bg-black bg-opacity-20">
             <button
-                className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Titulinis</button>
+                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Titulinis</button>
             <button
-                className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Kodas</button>
+                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Kodas</button>
             <button
-                className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Kontaktai</button>
+                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Kontaktai</button>
             <button
-                className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">3D
+                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">3D
                 darbai</button>
         </div>
 
         <div
             class="flex-none rounded-xl flex items-center justify-around shadow-xl bg-black bg-opacity-20">
-            <button className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">
+            <button className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-9">
@@ -36,7 +36,7 @@
 
             </button>
 
-            <button className="hover:outline outline-2 outline-color hover:bg-white hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">
+            <button className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">
                 <p className="text-3xl size-9">LT</p>
             </button>
         </div>
