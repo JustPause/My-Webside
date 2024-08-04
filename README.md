@@ -6,6 +6,8 @@ This template should help get you started developing with Vue 3 in Vite.
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
+<https://youtu.be/PdLEi6b4_PI?t=2031>
+
 ## Customize configuration
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
