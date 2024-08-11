@@ -9,10 +9,9 @@ import mainWindow from "./components/Index.vue"
   <Header />
 
   <main>
-    <mainWindow/>
+    <mainWindow />
   </main>
 
   <Footer />
 </template>
 
-<style scoped></style>
