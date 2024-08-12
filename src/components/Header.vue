@@ -1,13 +1,13 @@
 <template>
     <nav class="flex fixed h-20 gap-16 text-white text-sm font-bold font-mono justify-center mt-12 px-64 w-1280 -top-0">
 
-        <a href="#" class="flex-none rounded-xl flex items-center justify-center p-2 shadow-2xl bg-black bg-opacity-20">
+        <a href="#" class="flex-none rounded-xl flex items-center justify-center p-2 shadow-2xl bg-nav">
             <div class="icon aspect-square h-14 rounded-xl ml-1"></div>
             <p className="text-3xl text-center flex mx-4 logo-text">Justinas</p>
         </a>
 
         <div class=" rounded-xl flex items-center justify-center
-         category shadow-2xl bg-part-transparent bg-black bg-opacity-20">
+         category shadow-2xl bg-nav">
             <button
                 className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Titulinis</button>
             <button
@@ -20,7 +20,7 @@
         </div>
 
         <div
-            class="flex-none rounded-xl flex items-center justify-around shadow-2xl bg-black bg-opacity-20">
+            class="flex-none rounded-xl flex items-center justify-around shadow-2xl bg-nav">
             <button className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -64,5 +64,9 @@
 
 .leading-11 {
     line-height: 3.25rem;
+}
+.bg-nav{
+    --tw-bg-opacity: 0.95;
+    background-color: rgb(14 14 14 / var(--tw-bg-opacity)) /* #ca8a04 */;
 }
 </style>

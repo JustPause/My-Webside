@@ -1,9 +1,11 @@
+<script setup>
+import TextAndImiges from "./TextAndImiges.vue"
+</script>
+
 <template>
 
-
-
-    <div className="flex flex-col items-center gap-3">
-        <div name="HelloSeperaitor " className="HelloSeperaitor relative top-48">
+    <div className="flex flex-col items-center gap-3 mt-48">
+        <div name="HelloSeperaitor " className="HelloSeperaitor">
             <p className="text-5xl font-normal leading-tight text-center mb-4 ">Hello I am <color><br>Justinas Stankūnas
                 </color>
             </p>
@@ -16,26 +18,8 @@
         </div>
     </div>
 
-    <div name="frames" className="flex flex-col items-center justify-center">
-        <div name="ProgrammingPart" className="flex justify-center items-center gap-56 self-stretch">
-            <p className="w-6/12">The process of developing software is both time-consuming and incredibly
-                rewarding for me. It involves
-                translating my ideas and concepts into functional fings, you can't grasp it but you can feel it. In
-                general,
-                software can significantly influence people's lives and my future programs will be capable of affecting
-                others. The process of software development requires careful attention to detail and a strong enthusiasm
-                for
-                solving problems, and this career path enables me to continually learn and adjust to new technologies. I
-                found my path in low-level languages, where the power is in your hands, I like to feel like I can do
-                something special, something that other people can't do. I like to expand my knowledge to other topics,
-                from
-                DevOps to the front end, reverse engineering, and memory manipulation. That lets me get a feel for other
-                subjects, and I really like that feeling. of course, it kinda distracts me from reaching the goal that I
-                set
-                for myself, and I see it as a good thing, it helps me keep my interest in computers and not to burn out.
-            </p>
-            <img src="/src/img/Me.jpg" alt="images of me" className="w-4/12">
-        </div>
+    <div name="frames" className="flex flex-col items-center justify-center mt-48">
+        <TextAndImiges v-for="page in pages"/>
     </div>
 
 </template>
@@ -48,20 +32,20 @@ color {
     color: var(--color-highlighters);
 }
 
-.imigeLayout {
-    width: 43em;
-    height: 32em;
-    flex-shrink: 0;
-}
-
-.imigeStyle {
-    border-radius: 30px;
-    border: 1px #000;
-    background: url(/src/img/Me.jpg) lightgray 50% / cover no-repeat;
-    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
-}
-
-.PartText{
+.PartText {
     width: 520px;
 }
 </style>
+<script>
+
+export default {
+    methods: {
+        async getPages() {
+            let res = await fetch('bodyText.json');
+            let data = await res.json();
+
+            return this.pages = data;
+        }
+    },
+}
+</script>
