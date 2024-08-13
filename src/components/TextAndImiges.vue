@@ -1,6 +1,6 @@
 <template>
     <div name="ProgrammingPart" className="flex justify-center items-center gap-56 self-stretch text-center">
-        <!-- <p
+        <p
             className="w-6/12 bg-gradient-to-r from-neutral-800 to-neutral-900 p-8 rounded-tr-4xl rounded-bl-4xl border border-neutral-700">
             The process of developing software is both time-consuming and incredibly
             rewarding for me. It involves
@@ -17,20 +17,11 @@
             subjects, and I really like that feeling. of course, it kinda distracts me from reaching the goal that I
             set
             for myself, and I see it as a good thing, it helps me keep my interest in computers and not to burn out.
-        </p> -->
-        <p
-            className="w-6/12 bg-gradient-to-r from-neutral-800 to-neutral-900 p-8 rounded-tr-4xl rounded-bl-4xl border border-neutral-700">
-            {{ page.text }}
         </p>
-        <img :src="`/src/img/${page.imgName}`" alt="images of me"
-            className="w-4/12 rounded-4xl border border-neutral-700">
+        <img :src="`/src/img/Me.jpg`" alt="images of me" className="w-4/12 rounded-4xl border border-neutral-700">
     </div>
 </template>
 <script>
-export default
-    {
-        props: ["page"]
-    }
 
 </script>
 <style scoped></style>
