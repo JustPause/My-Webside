@@ -1,5 +1,6 @@
 <script setup>
 import TextAndImiges from "./TextAndImiges.vue"
+import MyWorkSlides from "./MyWorkSlides.vue"
 
 const pages = [
     {
@@ -33,8 +34,12 @@ const pages = [
         </div>
     </div>
 
-    <div name="frames" className="flex flex-col items-center justify-center mt-48">
+    <div name="frameMe" className="flex flex-col items-center justify-center my-48">
         <TextAndImiges v-for="(page, index) in pages" :key="index" :page="page" :index="index" />
+    </div>
+
+    <div name="frameWork" className="flex flex-col items-end">
+        <MyWorkSlides/>
     </div>
 
 </template>
@@ -53,6 +58,6 @@ color {
 </style>
 <script>
 export default {
-    components: { TextAndImiges }
+    components: { TextAndImiges, MyWorkSlides }
 }
 </script>
