@@ -4,13 +4,14 @@
             className="w-6/12 bg-gradient-to-r from-neutral-800 to-neutral-900 p-8 rounded-tr-4xl rounded-bl-4xl border border-neutral-700">
             {{ page.text }}
         </p>
-        <img :src="`/src/img/${page.img}.jpg`" alt="images of me"
+        <img :src="`/src/img/${page.img}.jpg`" alt="`${page.altImgText}`"
             className="w-4/12 rounded-4xl border border-neutral-700">
+            {{index}}
     </div>
 </template>
 <script>
 export default {
-    props: ['page']
+    props: ['page','index']
 }
 </script>
 <style scoped></style>

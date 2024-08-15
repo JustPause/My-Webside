@@ -11,8 +11,17 @@
 </template>
 <script>
 export default {
-    props: ['page'],
-    
+    props: {
+        page: {
+            type: Object,
+            required: true
+        },
+        index: {
+            type: Number,
+            required: true
+        }
+    },
+
     methods: {
         getClass(index) {
             // Add 'highlight' class to the 2nd and 3rd items (index 1 and 2)
