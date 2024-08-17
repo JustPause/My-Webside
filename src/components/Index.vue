@@ -23,7 +23,7 @@ const pages = [
 
 <template>
 
-    <div className="flex flex-col items-center gap-3 mt-48">
+    <div className="flex flex-col items-center gap-3 pt-48">
         <div name="HelloSeperaitor " className="HelloSeperaitor">
             <p className="text-5xl font-normal leading-tight text-center mb-4 ">Hello I am <color><br>Justinas Stankūnas
                 </color>
