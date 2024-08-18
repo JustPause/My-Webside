@@ -1,30 +1,29 @@
 <template>
     <nav class="flex fixed h-20 gap-16 text-white text-sm font-bold font-mono justify-center mt-12 px-64 w-1280 -top-0">
 
-        <a href="#" class="flex-none rounded-xl flex items-center justify-center p-2 shadow-2xl bg-nav">
+        <a href="#" class="flex-none rounded-xl flex items-center justify-center p-2 shadow-2xl bg-nav  border border-neutral-700">
             <div class="icon aspect-square h-14 rounded-xl ml-1"></div>
-            <p className="text-3xl text-center flex mx-4 logo-text">Justinas</p>
+            <p className="text-xl text-center flex mx-4 logo-text">Justinas</p>
         </a>
 
         <div class=" rounded-xl flex items-center justify-center
-         category shadow-2xl bg-nav">
+         category shadow-2xl bg-nav  border border-neutral-700">
             <button
-                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Titulinis</button>
+                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-xl m-4 duration-300 ">Titulinis</button>
             <button
-                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Kodas</button>
+                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-xl m-4 duration-300">Kodas</button>
             <button
-                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">Kontaktai</button>
+                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-xl m-4 duration-300">Kontaktai</button>
             <button
-                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">3D
-                darbai</button>
+                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-xl m-4 duration-300">3D darbai</button>
         </div>
 
         <div
-            class="flex-none rounded-xl flex items-center justify-around shadow-2xl bg-nav">
+            class="flex-none rounded-xl flex items-center justify-around shadow-xl bg-nav  border border-neutral-700">
             <button className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-9">
+                    stroke="currentColor" class="size-7">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
                 </svg>
@@ -36,8 +35,8 @@
 
             </button>
 
-            <button className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">
-                <p className="text-3xl size-9">LT</p>
+            <button className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-xl m-4 duration-300">
+                <p className="text-xl ">LT</p>
             </button>
         </div>
     </nav>

@@ -41,19 +41,79 @@ const pages = [
     Work
   </a>
 
-  <div className="inline-flex h-80 ">
+  <div className="inline-flex h-80 overflow-y: auto; ">
     <!-- overflow-scroll -->
     <a
       class="contaner"
-      className="w-72 h-72 bg-slate-600 p-8 rounded-4xl"
+      className="w-72 bg-slate-600 p-8 rounded-4xl border border-neutral-700 ml-4"
       href="#"
     >
       <h1 className="text-2xl pb-2">My andriod project</h1>
       <p className="overflow-ellipsis break-words text-justify">
-        In <b>Vilnius Coding Scool</b>, my final project was, to make a project
-        in <b>Java</b> with <b>SQL</b>. So that is my project. It is the Andriod
-        program, main in <b>Andriod studio</b>, with <b>SQLite</b> database.
-        With <b>Room</b> framework
+        In Vilnius Coding Scool, my final project was, to make a project in Java
+        with SQL. So that is my project. It is the Andriod program, main in
+        Andriod studio, with SQLite database. With Room framework.
+      </p>
+    </a>
+    <a
+      class="contaner"
+      className="w-72 bg-slate-600 p-8 rounded-4xl border border-neutral-700 ml-4"
+      href="#"
+    >
+      <h1 className="text-2xl pb-2">My andriod project</h1>
+      <p className="overflow-ellipsis break-words text-justify">
+        In Vilnius Coding Scool, my final project was, to make a project in Java
+        with SQL. So that is my project. It is the Andriod program, main in
+        Andriod studio, with SQLite database. With Room framework.
+      </p>
+    </a>
+    <a
+      class="contaner"
+      className="w-72 bg-slate-600 p-8 rounded-4xl border border-neutral-700 ml-4"
+      href="#"
+    >
+      <h1 className="text-2xl pb-2">My andriod project</h1>
+      <p className="overflow-ellipsis break-words text-justify">
+        In Vilnius Coding Scool, my final project was, to make a project in Java
+        with SQL. So that is my project. It is the Andriod program, main in
+        Andriod studio, with SQLite database. With Room framework.
+      </p>
+    </a>
+
+    <a
+      class="contaner"
+      className="w-72 bg-slate-600 p-8 rounded-4xl border border-neutral-700 ml-4"
+      href="#"
+    >
+      <h1 className="text-2xl pb-2">My andriod project</h1>
+      <p className="overflow-ellipsis break-words text-justify">
+        In Vilnius Coding Scool, my final project was, to make a project in Java
+        with SQL. So that is my project. It is the Andriod program, main in
+        Andriod studio, with SQLite database. With Room framework.
+      </p>
+    </a>
+    <a
+      class="contaner"
+      className="w-72 bg-slate-600 p-8 rounded-4xl border border-neutral-700 ml-4"
+      href="#"
+    >
+      <h1 className="text-2xl pb-2">My andriod project</h1>
+      <p className="overflow-ellipsis break-words text-justify">
+        In Vilnius Coding Scool, my final project was, to make a project in Java
+        with SQL. So that is my project. It is the Andriod program, main in
+        Andriod studio, with SQLite database. With Room framework.
+      </p>
+    </a>
+    <a
+      class="contaner"
+      className="w-72 bg-slate-600 p-8 rounded-4xl border border-neutral-700 ml-4"
+      href="#"
+    >
+      <h1 className="text-2xl pb-2">My andriod project</h1>
+      <p className="overflow-ellipsis break-words text-justify">
+        In Vilnius Coding Scool, my final project was, to make a project in Java
+        with SQL. So that is my project. It is the Andriod program, main in
+        Andriod studio, with SQLite database. With Room framework.
       </p>
     </a>
 
