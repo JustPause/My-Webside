@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function addAnimation() {
     scrollers.forEach((scroller) => {
+      
       // Add data-animated="true" to every `.scroller` on the page
       scroller.setAttribute("data-animated", true); 
 
@@ -85,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <style scoped>
 .scroller {
-  max-width: 600px;
+  max-width: 1800px;
 }
 
 .scroller__inner {

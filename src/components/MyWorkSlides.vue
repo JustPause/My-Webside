@@ -41,19 +41,71 @@ const pages = [
     Work
   </a>
 
-  <div className="inline-flex h-80 overflow-y: auto; ">
+  <div className="overflow-x-auto flex animasion">
     <!-- overflow-scroll -->
+
     <a
-      class="contaner"
-      className="w-72 bg-slate-600 p-8 rounded-4xl border border-neutral-700 ml-4"
-      href={{page.Link}} v-for="page in pages"
+      className="w-72 bg-slate-600 p-8 rounded-4xl border border-neutral-700 ml-4 contaner_animasion"
+      href="{{page.Link}}"
+      v-for="page in pages"
     >
-      <h1 className="text-2xl pb-2">{{page.Title}}</h1>
+      <h1 className="text-2xl pb-2">{{ page.Title }}</h1>
       <p className="overflow-ellipsis break-words text-justify">
-        {{page.Text}}
+        {{ page.Text }}
       </p>
     </a>
-    
-    <!-- https://codepen.io/kevinpowell/pen/BavVLra -->
   </div>
 </template>
+
+<style>
+.animasion {
+  animation: scroll 5s forwards linear infinite;
+}
+
+@keyframes scroll {
+  from{
+    transform: translate(calc(20% + 0.5rem));
+  }
+
+  to {
+    transform: translate(calc(53.5% + 0.5rem));
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const animasions = document.querySelectorAll(".animasion");
+
+  // If a user hasn't opted in for reduced motion, then we add the animation
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    addAnimation();
+  }
+
+  function addAnimation() {
+    animasions.forEach((animasion) => {
+      // Add data-animated="true" to every `.scroller` on the page
+      animasion.setAttribute("data-animated", true);
+
+      // Make an array from the elements within `.scroller-inner`
+      // const animasionInner = animasion.querySelector(".scroller__inner");
+      const animasionContent = Array.from(animasion.children);
+
+      // For each item in the array, clone it
+      // Add aria-hidden to it
+      // Add it into the `.scroller-inner`
+      animasionContent.forEach((item) => {
+        const duplicatedItem = item.cloneNode(true);
+        duplicatedItem.setAttribute("aria-hidden", true);
+        animasion.appendChild(duplicatedItem);
+      });
+
+      animasionContent.forEach((item) => {
+        const duplicatedItem = item.cloneNode(true);
+        duplicatedItem.setAttribute("aria-hidden", true);
+        animasion.appendChild(duplicatedItem);
+      });
+    });
+  }
+});
+</script>
