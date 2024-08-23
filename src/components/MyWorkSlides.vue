@@ -45,7 +45,7 @@ const pages = [
     <!-- overflow-scroll -->
 
     <a
-      className="w-72 bg-slate-600 p-8 rounded-4xl border border-neutral-700 ml-4 contaner_animasion"
+      className="w-72  p-8 rounded-4xl border border-neutral-700 ml-4 contaner_animasion"
       href="{{page.Link}}"
       v-for="page in pages"
     >

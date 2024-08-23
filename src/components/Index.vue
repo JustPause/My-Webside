@@ -2,8 +2,6 @@
 import TextAndImiges from "./TextAndImiges.vue"
 import MyWorkSlides from "./MyWorkSlides.vue"
 
-import test from "./test.vue"
-
 const pages = [
     {
         text: 'The process of developing software is both time-consuming and incredibly rewarding for me. It involves translating my ideas and concepts into functional fings, you can\'t grasp it but you can feel it. In general, software can significantly influence people\'s lives and my future programs will be capable of affecting others. The process of software development requires careful attention to detail and a strong enthusiasm for solving problems, and this career path enables me to continually learn and adjust to new technologies. I found my path in low-level languages, where the power is in your hands, I like to feel like I can do something special, something that other people can\'t do. I like to expand my knowledge to other topics, from DevOps to the front end, reverse engineering, and memory manipulation. That lets me get a feel for other subjects, and I really like that feeling. of course, it kinda distracts me from reaching the goal that I set for myself, and I see it as a good thing, it helps me keep my interest in computers and not to burn out.',
@@ -46,8 +44,6 @@ const pages = [
     <div name="frameWork" className="flex flex-col items-end">
         <MyWorkSlides />
     </div>
-
-    <test />
 
 </template>
 <style scoped>
