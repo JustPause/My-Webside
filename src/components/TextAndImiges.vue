@@ -8,7 +8,7 @@
     </p>
     <img
       :src="`/src/img/${page.img}.jpg`"
-      alt="`${page.altImgText}`"
+      :alt="page.altImgText"
       :class="imgDinamicClasses(index)"
     />
 
@@ -32,16 +32,19 @@ export default {
           case 0:
             return [
               "rounded-4xl",
+              "rounded-tl-none",
               "rounded-br-none",
               "bg-gradient-to-r",
               this.textStaticClasses,
             ];
           case 1:
-            return ["rounded-r-4xl", "bg-gradient-to-l",this.textStaticClasses];
+            return ["rounded-br-4xl",
+              "rounded-tl-4xl", "bg-gradient-to-l",this.textStaticClasses];
           default:
             return [
               "rounded-4xl",
               "rounded-tr-none",
+              "rounded-bl-none",
               "bg-gradient-to-r",
               this.textStaticClasses,
             ];
@@ -51,11 +54,11 @@ export default {
       imgDinamicClasses(index) {
         switch (index) {
           case 0:
-            return ["rounded-4xl", "rounded-bl-none", this.imgStaticClasses];
+            return ["rounded-4xl", "rounded-bl-none","rounded-tr-none", this.imgStaticClasses];
           case 1:
-            return ["rounded-l-4xl", this.imgStaticClasses];
+            return ["rounded-tr-4xl","rounded-bl-4xl", this.imgStaticClasses];
           default:
-            return ["rounded-4xl", "rounded-tl-none", this.imgStaticClasses];
+            return ["rounded-4xl", "rounded-bl-none", "rounded-tr-none", this.imgStaticClasses];
         }
       },
     };
