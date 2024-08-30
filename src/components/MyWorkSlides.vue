@@ -57,11 +57,11 @@ const pages = [
 
 @keyframes scroll {
 	from {
-		transform: translate(calc((1rem + 18em)));
+		transform: translate();
 	}
 
 	to {
-		transform: translate(calc((1rem + 18em)*2));
+		transform: translate(calc((1rem + 18em)));
 	}
 }
 </style>
@@ -74,10 +74,12 @@ export default {
 	mounted() {
 		function addAnimation(width) {
 			animasions.forEach((animasion) => {
+
 				const animasionContent = Array.from(animasion.children);
+
 				const loopCount = Math.round(document.getElementById("app").offsetWidth / width)
 
-				for (let loop = 0; loop < loopCount + 2; loop++) {
+				for (let loop = 0; loop <= loopCount-1; loop++) {
 
 					animasionContent.forEach((item) => {
 						const duplicatedItem = item.cloneNode(true);
@@ -86,7 +88,6 @@ export default {
 
 				}
 
-
 			});
 		}
 
@@ -94,7 +95,6 @@ export default {
 
 		if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 			setTimeout(() => {
-
 				addAnimation(document.getElementById("page-id-0").offsetWidth);
 			}, 0);
 		}

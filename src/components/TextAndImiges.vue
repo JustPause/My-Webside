@@ -38,13 +38,18 @@ export default {
               this.textStaticClasses,
             ];
           case 1:
-            return ["rounded-br-4xl",
-              "rounded-tl-4xl", "bg-gradient-to-l",this.textStaticClasses];
-          default:
-            return [
+          return [
               "rounded-4xl",
               "rounded-tr-none",
               "rounded-bl-none",
+              "bg-gradient-to-l",
+              this.textStaticClasses,
+            ];
+          default:
+          return [
+              "rounded-4xl",
+              "rounded-tl-none",
+              "rounded-br-none",
               "bg-gradient-to-r",
               this.textStaticClasses,
             ];
@@ -54,11 +59,11 @@ export default {
       imgDinamicClasses(index) {
         switch (index) {
           case 0:
-            return ["rounded-4xl", "rounded-bl-none","rounded-tr-none", this.imgStaticClasses];
+            return ["rounded-tl-4xl","rounded-br-4xl", this.imgStaticClasses];
           case 1:
             return ["rounded-tr-4xl","rounded-bl-4xl", this.imgStaticClasses];
           default:
-            return ["rounded-4xl", "rounded-bl-none", "rounded-tr-none", this.imgStaticClasses];
+            return ["rounded-tl-4xl","rounded-br-4xl", this.imgStaticClasses];
         }
       },
     };
