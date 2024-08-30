@@ -47,15 +47,15 @@ const pages = [
 	</div>
 	<div name="frameWorkPart1" className="flex flex-col items-end overflow-hidden">
 		<a className="text-5xl font-normal leading-tight text-center mb-16 " href="https://github.com/JustPause">
-			Work
+			<color>Work</color>
 		</a>
 	</div>
 	<!-- <div name="frameWorkPart2" className="flex flex-col items-end overflow-hidden" style="mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent); 
 		-webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)">
 		<MyWorkSlides />
 	</div> -->
-	<div name="frameWorkPart2" className="flex flex-col items-end">
-		-webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)">
+	<div name="frameWorkPart2" className="flex flex-col items-end"
+		>
 		<MyWorkSlides />
 	</div>
 </template>

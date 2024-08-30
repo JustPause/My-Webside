@@ -5,11 +5,11 @@ const pages = [
 		Text: "In Vilnius Coding Scool, my final project was, to make a project in Java with SQL. So that is my project. It is the Andriod program, main in Andriod studio, with SQLite database. With Room framework.",
 		Link: "#",
 	},
-	//   {
-	//     Title: "B",
-	//     Text: "B",
-	//     Link: "B",
-	//   },
+	{
+		Title: "B",
+		Text: "B",
+		Link: "B",
+	},
 	//   {
 	//     Title: "C",
 	//     Text: "C",
@@ -39,51 +39,61 @@ const pages = [
 		<div className="flex animasion ">
 			<!-- overflow-scroll -->
 
-			<a className="w-72  p-8 rounded-4xl border border-neutral-700 ml-4 contaner_animasion " :href="page.Link"
+			<a className="w-72 p-8 rounded-4xl border border-neutral-700 ml-8 contaner_animasion " :href="page.Link"
 				v-for="(page, index) in pages" :id="'page-id-' + index">
+				<PageLength :total-pages="pages.length" />
 				<h1 className="text-2xl pb-2">{{ page.Title }}</h1>
 				<p className="overflow-ellipsis break-words text-justify">
 					{{ page.Text }}
 				</p>
 			</a>
+
+
 		</div>
 	</div>
 </template>
 
 <style>
+:root {
+	--width:18em;
+}
+
 .animasion {
 	animation: scroll 5s linear infinite;
 }
 
 @keyframes scroll {
 	from {
-		transform: translate();
+		transform: translate(0rem);
 	}
 
 	to {
-		transform: translate(calc((1rem + 18em)));
+		transform: translate(calc((2rem + var(--width))));
 	}
 }
 </style>
 
 <script>
+
 document.addEventListener("DOMContentLoaded", function () {
 
 });
 export default {
+
 	mounted() {
 		function addAnimation(width) {
 			animasions.forEach((animasion) => {
-
 				const animasionContent = Array.from(animasion.children);
 
 				const loopCount = Math.round(document.getElementById("app").offsetWidth / width)
 
-				for (let loop = 0; loop <= loopCount-1; loop++) {
+				for (let loop = 0; loop <= loopCount - 1; loop++) {
 
 					animasionContent.forEach((item) => {
+
 						const duplicatedItem = item.cloneNode(true);
 						animasion.appendChild(duplicatedItem);
+						console.log(duplicatedItem.id = duplicatedItem.id + "-clone-" + Number(loop + 1));
 					});
 
 				}
@@ -95,8 +105,10 @@ export default {
 
 		if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 			setTimeout(() => {
-				addAnimation(document.getElementById("page-id-0").offsetWidth);
+				addAnimation(document.getElementById("page-id-0").offsetWidth * document.getElementsByTagName("PageLength").length);
 			}, 0);
+			document.documentElement.style.setProperty("--width", "38em"); //36em Width + 2 margin
+
 		}
 	}
 }
