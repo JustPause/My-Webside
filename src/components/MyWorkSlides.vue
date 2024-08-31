@@ -10,26 +10,26 @@ const pages = [
 		Text: "B",
 		Link: "B",
 	},
-	//   {
-	//     Title: "C",
-	//     Text: "C",
-	//     Link: "C",
-	//   },
-	//   {
-	//     Title: "T",
-	//     Text: "T",
-	//     Link: "T",
-	//   },
-	//   {
-	//     Title: "B",
-	//     Text: "B",
-	//     Link: "B",
-	//   },
-	//   {
-	//     Title: "C",
-	//     Text: "C",
-	//     Link: "C",
-	//   },
+	{
+		Title: "C",
+		Text: "C",
+		Link: "C",
+	},
+	{
+		Title: "T",
+		Text: "T",
+		Link: "T",
+	},
+	{
+		Title: "B",
+		Text: "B",
+		Link: "B",
+	},
+	{
+		Title: "C",
+		Text: "C",
+		Link: "C",
+	},
 ];
 </script>
 
@@ -55,11 +55,12 @@ const pages = [
 
 <style>
 :root {
-	--width:18em;
+	--width: 18em;
+	--time: 5s
 }
 
 .animasion {
-	animation: scroll 5s linear infinite;
+	animation: scroll var(--time) linear infinite;
 }
 
 @keyframes scroll {
@@ -105,9 +106,19 @@ export default {
 
 		if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 			setTimeout(() => {
-				addAnimation(document.getElementById("page-id-0").offsetWidth * document.getElementsByTagName("PageLength").length);
+
+				let length = document.getElementsByTagName("PageLength").length
+				let elemnt_width = document.getElementById("page-id-0").offsetWidth * length
+				let fontSize = parseFloat(getComputedStyle(document.documentElement).fontSize)
+				let rem = String(elemnt_width / fontSize + 2 * (length - 1) + "rem")
+
+				addAnimation(elemnt_width);
+				document.documentElement.style.setProperty("--width", rem);
+
+				document.documentElement.style.setProperty("--time", String((5 * length)+"s"));
+
 			}, 0);
-			document.documentElement.style.setProperty("--width", "38em"); //36em Width + 2 margin
+
 
 		}
 	}

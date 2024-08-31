@@ -50,14 +50,11 @@ const pages = [
 			<color>Work</color>
 		</a>
 	</div>
-	<!-- <div name="frameWorkPart2" className="flex flex-col items-end overflow-hidden" style="mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent); 
+	<div name="frameWorkPart2" className="flex flex-col items-end overflow-hidden" style="mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent); 
 		-webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)">
 		<MyWorkSlides />
-	</div> -->
-	<div name="frameWorkPart2" className="flex flex-col items-end"
-		>
-		<MyWorkSlides />
 	</div>
+
 </template>
 <style scoped>
 .HelloSeperaitor {
