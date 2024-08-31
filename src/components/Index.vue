@@ -1,6 +1,7 @@
 <script setup>
 import TextAndImiges from "./TextAndImiges.vue"
 import MyWorkSlides from "./MyWorkSlides.vue"
+import Socials from "./Socials.vue";
 
 const pages = [
 	{
@@ -54,7 +55,9 @@ const pages = [
 		-webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent)">
 		<MyWorkSlides />
 	</div>
-
+	<div name="Socials" className="mt-32">
+		<Socials />
+	</div>
 </template>
 <style scoped>
 .HelloSeperaitor {
