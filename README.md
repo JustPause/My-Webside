@@ -53,3 +53,5 @@ truputi pavazevus zemyn headeris turetu tapti is fixed i sticky
 ### Footer
 
 ### 404
+
+### add page manifesto

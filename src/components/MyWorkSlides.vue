@@ -117,7 +117,7 @@ export default {
 
 				document.documentElement.style.setProperty("--time", String((5 * length)+"s"));
 
-			}, 0);
+			}, 10);
 
 
 		}

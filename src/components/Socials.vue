@@ -1,9 +1,9 @@
 <script setup>
 const likis = [
   { Title: "My Resume", Icon: "My_Resume", Link: "#", BGColor: "#ff00ff" },
-  { Title: "LinkedIn", Icon: "LinkedIn", Link: "#" },
-  { Title: "Email", Icon: "Email", Link: "#" },
-  { Title: "GitHub", Icon: "GitHub", Link: "#" },
+  { Title: "LinkedIn", Icon: "LinkedIn", Link: "#", BGColor: "#ff00ff" },
+  { Title: "Email", Icon: "Email", Link: "#", BGColor: "#ff00ff" },
+  { Title: "GitHub", Icon: "GitHub", Link: "#", BGColor: "#ff00ff" },
 ];
 </script>
 
@@ -16,7 +16,6 @@ const likis = [
         height="227"
         viewBox="0 0 620 227"
         fill="none"
-        
       >
         <text x="176" y="30" fill="white" font-size="2.5em">More about me</text>
         <path
@@ -27,16 +26,19 @@ const likis = [
       </svg>
     </div>
 
-    <div id="boxesBox" className="inline-flex gap-4 flex-wrap items-center justify-center content-center" style="width: 620px;height: 185px;">
+    <div
+      id="boxesBox"
+      className="inline-flex gap-4 flex-wrap items-center justify-center content-center"
+      style="width: 620px; height: 185px"
+    >
       <div
         :href="liki.Link"
         v-for="(liki, index) in likis"
         :id="liki.Title"
-        className="h-16 w-64 bg-slate-400 "
+        className="h-16 w-64 bg-slate-400"
       ></div>
     </div>
   </div>
-
 </template>
 
 <style>
