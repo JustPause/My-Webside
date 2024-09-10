@@ -9,7 +9,7 @@ export default defineConfig({
     vue({
       template: {
         compilerOptions: {
-          isCustomElement: (tag) => ['color'].includes(tag),
+          isCustomElement: (tag) => ['color', 'PageLength'].includes(tag)
         }
       }
     }),

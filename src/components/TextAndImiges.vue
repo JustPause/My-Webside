@@ -23,7 +23,7 @@ export default {
   data() {
     return {
       textStaticClasses:
-        "w-6/12  from-neutral-800 to-neutral-900 p-8 border border-neutral-700",
+        "w-6/12  from-neutral-800 to-neutral-900 p-8 border border-neutral-700 ",
 
       imgStaticClasses: "w-4/12 border border-neutral-700",
 

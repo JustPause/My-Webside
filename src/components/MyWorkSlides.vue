@@ -35,7 +35,7 @@ const pages = [
 
 <template>
 
-	<div className="">
+	<div className=" z-0">
 		<div className="flex animasion ">
 			<!-- overflow-scroll -->
 

@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex fixed h-20 gap-16 text-white text-sm font-bold font-mono justify-center mt-12 px-64 w-1280 -top-0">
+    <nav class="flex fixed h-20 gap-16 text-white text-sm font-bold font-mono justify-center mt-12 px-64 w-1280 -top-0 z-10">
 
         <a href="#" class="flex-none rounded-3xl flex items-center justify-center p-2 shadow-2xl bg-nav  border border-neutral-700">
             <div class="icon aspect-square h-14 rounded-xl ml-1"></div>

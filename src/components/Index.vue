@@ -46,6 +46,7 @@ const pages = [
 	<div name="frameMe" className="flex flex-col items-center justify-center my-48">
 		<TextAndImiges v-for="(page, index) in pages" :key="index" :page="page" :index="index" />
 	</div>
+
 	<div name="frameWorkPart1" className="flex flex-col items-end overflow-hidden">
 		<a className="text-5xl font-normal leading-tight text-center mb-16 " href="https://github.com/JustPause">
 			<color>Work</color>
