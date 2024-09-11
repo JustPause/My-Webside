@@ -1,6 +1,6 @@
 @import "./base.css";
 
-#app {
+main {
   max-width: var(--page-width);
   margin: 0 auto;
   font-weight: normal;

@@ -24,7 +24,7 @@ const likis = [
   {
     Title: "GitHub",
     Icon: "2916248_github_marketing_media_social_website_icon",
-    Link: "#",
+    Link: "https://github.com/JustPause",
     BGColor: "#000",
     TextColor: "white"
   },

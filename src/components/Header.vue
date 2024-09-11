@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex fixed h-20 gap-16 text-white text-sm font-bold font-mono justify-center mt-12 px-64 w-1280 -top-0 z-10">
+  <nav class="flex fixed h-20 gap-16 text-white text-sm font-bold font-mono justify-center mt-12 inset-x-0 top-0 z-10">
 
         <a href="#" class="flex-none rounded-3xl flex items-center justify-center p-2 shadow-2xl bg-nav  border border-neutral-700">
             <div class="icon aspect-square h-14 rounded-xl ml-1"></div>
@@ -9,18 +9,18 @@
         <div class=" rounded-3xl flex items-center justify-center
          category shadow-2xl bg-nav  border border-neutral-700">
             <button
-                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-2xl p-2 text-xl m-4 duration-300 w-max leading-0">Titulinis</button>
+                className="hover:outline outline-2 outline-color hover:bg-neutral-600 hover:bg-opacity-10 rounded-2xl p-3 text-xl m-4 duration-300 w-max leading-0" href="https://github.com/JustPause">Githubas</button>
             <button
-                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-2xl p-2 text-xl m-4 duration-300 w-max">Kodas</button>
+                className="hover:outline outline-2 outline-color hover:bg-neutral-600 hover:bg-opacity-10 rounded-2xl p-3 text-xl m-4 duration-300 w-max">Kodas</button>
             <button
-                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-2xl p-2 text-xl m-4 duration-300 w-max">Kontaktai</button>
+                className="hover:outline outline-2 outline-color hover:bg-neutral-600   hover:bg-opacity-10 rounded-2xl p-3 text-xl m-4 duration-300 w-max">Kontaktai</button>
             <button
-                className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-2xl p-2 text-xl m-4 duration-300 w-max">3D darbai</button>
+                className="hover:outline outline-2 outline-color hover:bg-neutral-600 hover:bg-opacity-10 rounded-2xl p-3 text-xl m-4 duration-300 w-max">3D darbai</button>
         </div>
 
         <div
             class="flex-none rounded-3xl flex items-center justify-around shadow-xl bg-nav  border border-neutral-700">
-            <button className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-3xl m-4 duration-300">
+            <button className="hover:outline outline-2 outline-color hover:bg-neutral-600 hover:bg-opacity-10 rounded-xl p-3 text-3xl m-4 duration-300">
 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-7 h-7">
@@ -35,7 +35,7 @@
 
             </button>
 
-            <button className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-2 text-xl m-4 duration-300">
+            <button className="hover:outline outline-2 outline-color hover:bg-yellow-600 hover:bg-opacity-10 rounded-xl p-3 text-xl m-4 duration-300">
                 <p className="text-xl w-7 h-7">LT</p>
             </button>
         </div>
