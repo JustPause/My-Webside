@@ -59,12 +59,13 @@ const likis = [
         :href="liki.Link"
         v-for="(liki, index) in likis"
         :id="liki.Title"
-        className="h-16 w-64 bg-slate-400 rounded-2xl inline-flex gap-4"
+        class="h-16 bg-slate-400 rounded-2xl inline-flex gap-4"
         :style="{ 'background-color': liki.BGColor }"
+        style="width: 17.6rem;"
       >
-        <div id="Nuotrauka" className="pl-2 content-center w-1/3">
+        <!-- <div id="Nuotrauka" className="pl-2 content-center w-1/3">
           <img :src="'src/img/'+liki.Icon + '.svg'" alt="My Happy SVG" :width="50"/>
-        </div>
+        </div> -->
         <div id="Pavadinimas" className="content-center text-center w-full">
           <p className="text-xl font-semibold" :style="{ color: liki.TextColor }">{{ liki.Title }}</p>
         </div>
